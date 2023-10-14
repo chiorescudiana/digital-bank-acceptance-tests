@@ -1,0 +1,154 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>co.wedevx</groupId>
+  <artifactId>digital-bank-acceptance-tests</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>digital-bank-acceptance-tests</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.33</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+
+<dependency>
+  <groupId>org.junit.jupiter</groupId>
+  <artifactId>junit-jupiter</artifactId>
+  <version>5.9.2</version>
+  <scope>test</scope>
+</dependency>
+
+<dependency>
+  <groupId>io.cucumber</groupId>
+  <artifactId>cucumber-java</artifactId>
+  <version>7.11.1</version>
+  <scope>test</scope>
+</dependency>
+
+<dependency>
+  <groupId>io.cucumber</groupId>
+  <artifactId>cucumber-junit-platform-engine</artifactId>
+  <version>7.11.1</version>
+  <scope>test</scope>
+</dependency>
+
+<dependency>
+  <groupId>org.junit.platform</groupId>
+  <artifactId>junit-platform-suite</artifactId>
+  <version>1.9.2</version>
+  <scope>test</scope>
+</dependency>
+
+<dependency>
+  <groupId>org.junit.jupiter</groupId>
+  <artifactId>junit-jupiter-api</artifactId>
+  <version>5.9.2</version>
+  <scope>test</scope>
+</dependency>
+
+<!--selenium java library for UI automation-->
+<dependency>
+  <groupId>org.seleniumhq.selenium</groupId>
+  <artifactId>selenium-java</artifactId>
+  <version>4.11.0</version>
+</dependency>
+
+
+<!-- WebDriverManager -->
+<dependency>
+  <groupId>io.github.bonigarcia</groupId>
+  <artifactId>webdrivermanager</artifactId>
+  <version>5.5.2</version>
+</dependency>
+
+    <dependency>
+      <groupId>com.github.javafaker</groupId>
+      <artifactId>javafaker</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+
+  </dependencies>
+
+
+    <build>
+      <plugins>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version> <!-- Specify the version here -->
+        <configuration>
+          <source>1.8</source> <!-- Adjust as per your project needs -->
+          <target>1.8</target> <!-- Adjust as per your project needs -->
+        </configuration>
+        </plugin>
+
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.2</version> <!-- or the latest version you'd like to use -->
+          <dependencies>
+
+            <dependency>
+              <groupId>org.junit.platform</groupId>
+              <artifactId>junit-platform-surefire-provider</artifactId>
+              <version>1.2.0</version>
+            </dependency>
+
+            <dependency>
+              <groupId>org.junit.jupiter</groupId>
+              <artifactId>junit-jupiter-engine</artifactId>
+              <version>5.8.0</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+      </plugins>
+    </build>
+<!--        </plugin>-->
+<!--        <plugin>-->
+<!--          <groupId>org.apache.maven.plugins</groupId>-->
+<!--          <artifactId>maven-compiler-plugin</artifactId>-->
+<!--          <configuration>-->
+<!--            <source>20</source>-->
+<!--            <target>20</target>-->
+<!--            <compilerArgs>&#45;&#45;enable-preview</compilerArgs>-->
+<!-- </configuration>&ndash;&gt;-->
+<!--    </plugin>&ndash;&gt;-->
+<!--  </plugins>&ndash;&gt;-->
+<!--  </build>&ndash;&gt;-->
+
+
+
+<!--<groupId>org.apache.maven.plugins</groupId>-->
+<!--<artifactId>maven-compiler-plugin</artifactId>-->
+<!--<configuration>-->
+<!--  <source>20</source>-->
+<!--  <target>20</target>-->
+<!--  <compilerArgs>&#45;&#45;enable-preview</compilerArgs>-->
+<!--  </configuration>-->
+
+
+
+</project>
+
+
+
+
